@@ -28,7 +28,9 @@ func main() {
 	handler := handler.NewHandler(service)
 
 	serv := new(internal.Server)
-	serv.InitRoutes(viper.GetString("port"), handler.Init())
+	if err := serv.InitRoutes(viper.GetString("port"), handler.Init()); err != nil {
+		slog.Error(err.Error())
+	}
 
 }
 func InitConfig() error {

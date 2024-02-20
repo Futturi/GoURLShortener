@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/Futturi/internal/models"
@@ -34,5 +35,6 @@ func (h *Handler) Redir(c *gin.Context) {
 			"error": err.Error(),
 		})
 	}
-	c.Redirect(http.StatusPermanentRedirect, result)
+	fmt.Println(result)
+	c.Redirect(http.StatusMovedPermanently, result)
 }

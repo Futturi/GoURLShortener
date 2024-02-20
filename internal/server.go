@@ -11,7 +11,7 @@ type Server struct {
 
 func (s *Server) InitRoutes(port string, handler http.Handler) error {
 	s.httpServer = &http.Server{
-		Addr:           port,
+		Addr:           ":" + port,
 		Handler:        handler,
 		WriteTimeout:   20 * time.Second,
 		ReadTimeout:    20 * time.Second,

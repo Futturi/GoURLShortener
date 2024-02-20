@@ -1,0 +1,16 @@
+"filename", "language", "Properties", "Go", "YAML", "Go Module File", "Go Checksum File", "comment", "blank", "total"
+"/Users/lightbeag2/GolandProjects/URLShort/.env", "Properties", 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/lightbeag2/GolandProjects/URLShort/cmd/main.go", "Go", 0, 34, 0, 0, 0, 0, 6, 40
+"/Users/lightbeag2/GolandProjects/URLShort/go.mod", "Go Module File", 0, 0, 0, 49, 0, 0, 3, 52
+"/Users/lightbeag2/GolandProjects/URLShort/go.sum", "Go Checksum File", 0, 0, 0, 0, 122, 0, 1, 123
+"/Users/lightbeag2/GolandProjects/URLShort/internal/config/config.yaml", "YAML", 0, 0, 5, 0, 0, 0, 1, 6
+"/Users/lightbeag2/GolandProjects/URLShort/internal/handler/api.go", "Go", 0, 34, 0, 0, 0, 0, 5, 39
+"/Users/lightbeag2/GolandProjects/URLShort/internal/handler/handler.go", "Go", 0, 20, 0, 0, 0, 0, 4, 24
+"/Users/lightbeag2/GolandProjects/URLShort/internal/models/url.go", "Go", 0, 4, 0, 0, 0, 0, 2, 6
+"/Users/lightbeag2/GolandProjects/URLShort/internal/repository/api.go", "Go", 0, 32, 0, 0, 0, 0, 7, 39
+"/Users/lightbeag2/GolandProjects/URLShort/internal/repository/repository.go", "Go", 0, 15, 0, 0, 0, 0, 5, 20
+"/Users/lightbeag2/GolandProjects/URLShort/internal/server.go", "Go", 0, 18, 0, 0, 0, 0, 4, 22
+"/Users/lightbeag2/GolandProjects/URLShort/internal/service/api.go", "Go", 0, 28, 0, 0, 0, 0, 8, 36
+"/Users/lightbeag2/GolandProjects/URLShort/internal/service/service.go", "Go", 0, 15, 0, 0, 0, 0, 5, 20
+"/Users/lightbeag2/GolandProjects/URLShort/pkg/redis_init.go", "Go", 0, 16, 0, 0, 0, 0, 4, 20
+"Total", "-", 0, 216, 5, 49, 122, 0, 56, 448
