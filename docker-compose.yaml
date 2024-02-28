@@ -1,0 +1,8 @@
+version: '3.5'
+services:
+  redis-server:
+    image: "redis"
+    container_name: red1
+    ports:
+      - '6379:6379'
+    restart: unless-stopped

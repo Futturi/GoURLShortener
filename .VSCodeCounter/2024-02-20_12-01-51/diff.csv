@@ -1,0 +1,5 @@
+"filename", "language", "Go", "comment", "blank", "total"
+"/Users/lightbeag2/GolandProjects/URLShort/cmd/main.go", "Go", 2, 0, 0, 2
+"/Users/lightbeag2/GolandProjects/URLShort/internal/handler/api.go", "Go", 2, 0, 0, 2
+"/Users/lightbeag2/GolandProjects/URLShort/internal/repository/api.go", "Go", 6, 0, 0, 6
+"Total", "-", 10, 0, 0, 10

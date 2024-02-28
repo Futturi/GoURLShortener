@@ -1,0 +1,52 @@
+Date : 2024-02-20 12:01:51
+Directory : /Users/lightbeag2/GolandProjects/URLShort
+Total : 14 files,  402 codes, 0 comments, 56 blanks, all 458 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| Go               |         10 |        226 |          0 |         50 |        276 |
+| Go Checksum File |          1 |        122 |          0 |          1 |        123 |
+| Go Module File   |          1 |         49 |          0 |          3 |         52 |
+| YAML             |          1 |          5 |          0 |          1 |          6 |
+| Properties       |          1 |          0 |          0 |          1 |          1 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                        | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                           |         14 |        402 |          0 |         56 |        458 |
+| . (Files)                                                                   |          3 |        171 |          0 |          5 |        176 |
+| cmd                                                                         |          1 |         36 |          0 |          6 |         42 |
+| internal                                                                    |          9 |        179 |          0 |         41 |        220 |
+| internal (Files)                                                            |          1 |         18 |          0 |          4 |         22 |
+| internal/config                                                             |          1 |          5 |          0 |          1 |          6 |
+| internal/handler                                                            |          2 |         56 |          0 |          9 |         65 |
+| internal/models                                                             |          1 |          4 |          0 |          2 |          6 |
+| internal/repository                                                         |          2 |         53 |          0 |         12 |         65 |
+| internal/service                                                            |          2 |         43 |          0 |         13 |         56 |
+| pkg                                                                         |          1 |         16 |          0 |          4 |         20 |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                    | language         | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| /Users/lightbeag2/GolandProjects/URLShort/.env                              | Properties       |          0 |          0 |          1 |          1 |
+| /Users/lightbeag2/GolandProjects/URLShort/cmd/main.go                       | Go               |         36 |          0 |          6 |         42 |
+| /Users/lightbeag2/GolandProjects/URLShort/go.mod                            | Go Module File   |         49 |          0 |          3 |         52 |
+| /Users/lightbeag2/GolandProjects/URLShort/go.sum                            | Go Checksum File |        122 |          0 |          1 |        123 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/config/config.yaml       | YAML             |          5 |          0 |          1 |          6 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/handler/api.go           | Go               |         36 |          0 |          5 |         41 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/handler/handler.go       | Go               |         20 |          0 |          4 |         24 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/models/url.go            | Go               |          4 |          0 |          2 |          6 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/repository/api.go        | Go               |         38 |          0 |          7 |         45 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/repository/repository.go | Go               |         15 |          0 |          5 |         20 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/server.go                | Go               |         18 |          0 |          4 |         22 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/service/api.go           | Go               |         28 |          0 |          8 |         36 |
+| /Users/lightbeag2/GolandProjects/URLShort/internal/service/service.go       | Go               |         15 |          0 |          5 |         20 |
+| /Users/lightbeag2/GolandProjects/URLShort/pkg/redis_init.go                 | Go               |         16 |          0 |          4 |         20 |
+| Total                                                                       |                  |        402 |          0 |         56 |        458 |
++-----------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

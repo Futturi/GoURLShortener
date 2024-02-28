@@ -1,4 +1,7 @@
 port: "8000"
+grpc:
+ host: "localhost"
+ port: "9000"
 db:
  host: "localhost"
  port: "6379"
