@@ -10,6 +10,7 @@ func InitAuth(host, port string) (proto.AuthClient, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer conn.Close()
 	c := proto.NewAuthClient(conn)
 	return c, nil
 }
