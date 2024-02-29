@@ -1,9 +1,11 @@
 package handler
 
 import (
+	"context"
 	"net/http"
 	"strings"
 
+	proto "github.com/Futturi/AuthSer/protos"
 	"github.com/gin-gonic/gin"
 )
 
@@ -18,7 +20,7 @@ func (h *Handler) CheckIdentity(c *gin.Context) {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "invalid header"})
 		c.AbortWithStatus(http.StatusUnauthorized)
 	}
-	userid, err := h.service.Parse(splitedheader[1])
+	userid, err := h.grpcclient.CheckIdentity(context.Background(), &proto.CheckIdentityRequest{Header: splitedheader[1]})
 	if err != nil {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": err.Error()})
 		c.AbortWithStatus(http.StatusUnauthorized)

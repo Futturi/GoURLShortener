@@ -2,7 +2,6 @@ package repository
 
 import (
 	"github.com/Futturi/internal/models"
-	"github.com/jmoiron/sqlx"
 	"github.com/redis/go-redis/v9"
 )
 
@@ -10,7 +9,7 @@ type Repository struct {
 	Api
 }
 
-func NewRepository(db *redis.Client, pdb *sqlx.DB) *Repository {
+func NewRepository(db *redis.Client) *Repository {
 	return &Repository{Api: NewRepositoryApi(db)}
 }
 

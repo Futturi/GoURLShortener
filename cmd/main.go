@@ -24,26 +24,12 @@ func main() {
 		Password: "",
 	}
 
-	pcfg := pkg.Config{
-		Hostname: viper.GetString("db.host"),
-		Port:     viper.GetString("db.port"),
-		Username: viper.GetString("db.username"),
-		DB:       viper.GetString("db.namedb"),
-		Password: viper.GetString("db.password"),
-		SSLMode:  viper.GetString("db.sslmode"),
-	}
-
-	db, err := pkg.InitPostges(pcfg)
-	if err != nil {
-		slog.Error(err.Error())
-	}
-
 	grpcclient, err := authservice.InitAuth(viper.GetString("grpc.host"), viper.GetString("grpc.port"))
 	if err != nil {
 		slog.Error(err.Error())
 	}
 	red := pkg.InitRedis(rcfg)
-	repo := repository.NewRepository(red, db)
+	repo := repository.NewRepository(red)
 	service := service.NewService(repo)
 	handler := handler.NewHandler(service, grpcclient)
 	serv := new(internal.Server)

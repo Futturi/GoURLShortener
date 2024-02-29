@@ -8,6 +8,7 @@ import (
 	proto "github.com/Futturi/AuthSer/protos"
 	"github.com/Futturi/internal/models"
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
 )
 
 func (h *Handler) GetLink(c *gin.Context) {
@@ -25,7 +26,7 @@ func (h *Handler) GetLink(c *gin.Context) {
 		})
 	}
 	c.JSON(http.StatusOK, map[string]string{
-		"new_url": result,
+		"new_url": "localhost:" + viper.GetString("port") + "/" + result,
 	})
 }
 

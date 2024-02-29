@@ -3,11 +3,9 @@ module github.com/Futturi
 go 1.21.5
 
 require (
-	github.com/Futturi/AuthSer v0.0.0-20240228165830-140353c92532
+	github.com/Futturi/AuthSer v0.0.0-20240229061058-b4867d6d7206
 	github.com/gin-gonic/gin v1.9.1
 	github.com/golang-jwt/jwt v3.2.2+incompatible
-	github.com/jmoiron/sqlx v1.3.5
-	github.com/lib/pq v1.10.9
 	github.com/redis/go-redis/v9 v9.5.0
 	github.com/spf13/viper v1.18.2
 	google.golang.org/grpc v1.62.0
@@ -54,7 +52,7 @@ require (
 	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sys v0.17.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240123012728-ef4313101c80 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240228224816-df926f6c8641 // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

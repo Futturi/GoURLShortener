@@ -14,7 +14,6 @@ func NewService(repo *repository.Repository) *Service {
 }
 
 type Api interface {
-	Parse(header string) (int, error)
 	GetLink(url models.URL) (string, error)
 	Link(link string) (string, error)
 }

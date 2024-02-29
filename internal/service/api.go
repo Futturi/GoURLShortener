@@ -1,7 +1,6 @@
 package service
 
 import (
-	"errors"
 	"fmt"
 	"math/rand"
 	"strings"
@@ -54,21 +53,4 @@ func (a *ApiService) Link(link string) (string, error) {
 type ClaimsUser struct {
 	Id int
 	jwt.StandardClaims
-}
-
-func (a *ApiService) Parse(header string) (int, error) {
-	token, err := jwt.ParseWithClaims(header, &ClaimsUser{}, func(token *jwt.Token) (interface{}, error) {
-		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
-			return 0, errors.New("invalid signing method")
-		}
-		return []byte(jwtKey), nil
-	})
-	if err != nil {
-		return 0, err
-	}
-	Claims, ok := token.Claims.(*ClaimsUser)
-	if !ok {
-		return 0, errors.New("token claims are not of type *tokenClaims")
-	}
-	return Claims.Id, nil
 }
